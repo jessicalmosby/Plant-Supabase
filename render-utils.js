@@ -8,7 +8,7 @@ export function renderPlantCard(plant) {
 
     p.textContent = plant.name;
     img.src = `./assets/${plant.type}.jpeg`;
-    a.href = `.detail/?id=${plant.id}`;
+    a.href = `./detail/?id=${plant.id}`;
 
     div.append(p, img);
 
