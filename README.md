@@ -25,3 +25,39 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+![wireframe](/assets/wireframe1.png)
+![wireframe](/assets/wireframe2.png)
+
+### HTML
+
+-   on home page
+    -   div for list of items
+    -   render each item once its fetched from supabase (not hard coding)
+-   on detail page
+    -   section & div container for plant details
+    -   a link to home page in header
+
+### Events
+
+-   home page load
+
+    -   get all list items from supabase and display them
+        -loop through, render, and appened to container
+
+-   detail page load
+    -   get single item from supabase (by id)
+    -   render to page based on itme's info
+    -   use URLSearchParams to get the item's id
+
+### Functions
+
+-   fetch-utils: getPlants, getPlantById
+-   render-utils: renderPlantCard, renderPlantDetail
+
+### Slices
+
+1. get all items to render on home page load
+2. make item cards clickable & redirect to detail page
+3. get detail page to render with selected plant details (hard coded id)
+4. use URLSearchParams to fill in id dynamically

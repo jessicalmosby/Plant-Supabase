@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- metadata -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-        <!-- title and favicon -->
-        <title>Is your plant naughty or nice?</title>
-        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
-
-        <!-- js -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
+            rel="stylesheet"
+        />
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <!-- link to supabase -->
-        <script type="module" src="app.js"></script>
-
-        <!-- fonts -->
-        <!-- see https://fonts.google.com/ -->
-
-        <!-- css -->
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/global.css" />
-        <link rel="stylesheet" href="styles/style.css" />
-        <!-- add link for page specific css -->
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
+        <title>Plant Details</title>
 
         <!-- mouse sparkles cause they're cute -->
         <script type="text/javascript">
@@ -191,20 +181,18 @@
             // ]]>
         </script>
     </head>
-
     <body>
         <header>
-            <img class="logo" src="assets/headerimg.png" alt="logo" />
-            <h1>Just Plant Things</h1>
+            <img class="logo" src="../assets/headerimg.png" alt="logo" />
+            <h1>Just Plant Tings</h1>
+            <a href="../">Back to Plants</a>
         </header>
 
         <main>
             <section class="main-section">
-                <h2>Is your plant nice to pets??</h2>
-                <div id="plant-list-container"></div>
+                <div id="plant-detail-container"></div>
             </section>
         </main>
-
-        <script type="module" src="./app.js"></script>
+        <script type="module" src="./detail.js"></script>
     </body>
 </html>

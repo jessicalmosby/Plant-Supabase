@@ -1,0 +1,41 @@
+header {
+    background-color: rgb(78, 143, 78);
+}
+
+main {
+    background: linear-gradient(0deg, rgb(78, 143, 78) 25%, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plant-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+    gap: 30px;
+}
+
+.plant-detail {
+    border: 5px solid rgb(14, 116, 63);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plant-card {
+    border: 5px solid rgb(14, 116, 63);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
